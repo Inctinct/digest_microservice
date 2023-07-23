@@ -1,0 +1,69 @@
+[
+{
+  "model": "api.subscription",
+  "pk": 1,
+  "fields": {
+    "user_id": 1,
+    "source_name": "tut.by"
+  }
+},
+{
+  "model": "api.subscription",
+  "pk": 2,
+  "fields": {
+    "user_id": 1,
+    "source_name": "onliner"
+  }
+},
+{
+  "model": "api.post",
+  "pk": 1,
+  "fields": {
+    "subscription_id": 1,
+    "content": "test",
+    "popularity": 1000,
+    "sphere": "news"
+  }
+},
+{
+  "model": "api.post",
+  "pk": 2,
+  "fields": {
+    "subscription_id": 1,
+    "content": "test",
+    "popularity": 1500,
+    "sphere": "news"
+  }
+},
+{
+  "model": "api.post",
+  "pk": 3,
+  "fields": {
+    "subscription_id": 2,
+    "content": "test",
+    "popularity": 2000,
+    "sphere": "news"
+  }
+},
+{
+  "model": "api.post",
+  "pk": 4,
+  "fields": {
+    "subscription_id": 2,
+    "content": "test",
+    "popularity": 2000,
+    "sphere": "cars"
+  }
+},
+{
+  "model": "api.digest",
+  "pk": 11,
+  "fields": {
+    "user_id": 1,
+    "posts_list": [
+      1,
+      3
+    ]
+  }
+}
+]
